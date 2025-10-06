@@ -184,8 +184,3 @@ npm run dev
 - ☁️ ย้ายรูปไปเก็บบน Cloud Storage
 - 📊 เพิ่ม Dashboard แสดงสถิติ
 - 📨 ส่งอีเมลแจ้งสถานะคำขอ
-
----
-
-## 📄 License
-MIT © 2025 — Open for modification and educational use.
