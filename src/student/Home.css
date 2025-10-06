@@ -1,0 +1,140 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 60px;
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fb;
+}
+
+/* ===== กล่องเลือกวัน ===== */
+.date-picker-card {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.date-picker-card h2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.date-picker-card h5 {
+  font-weight: 200;
+  margin-bottom: 15px;
+  color: #a22f2f;
+}
+
+.date-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.date-inputs input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.date-inputs input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* ===== ส่วนแสดงแบรนด์ ===== */
+.cars-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ===== การ์ดแบรนด์ ===== */
+.car-card {
+  background: #fff;
+  border-radius: 16px;
+  width: 240px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== โลโก้ ===== */
+.car-image-wrapper {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.car-img {
+  width: 100%;
+  max-width: 160px;
+  max-height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover .car-img {
+  transform: scale(1.08);
+}
+
+/* ===== ชื่อแบรนด์ ===== */
+.car-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* ===== ปุ่ม ===== */
+.rent-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 140px;
+}
+
+.rent-btn:hover {
+  background: #0056b3;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .car-card {
+    width: 85%;
+    height: auto;
+  }
+
+  .car-image-wrapper {
+    height: 110px;
+  }
+}

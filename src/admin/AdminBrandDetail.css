@@ -1,0 +1,183 @@
+/* ====== ส่วนหลักของหน้า ====== */
+.brand-detail-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.brand-detail-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ====== ปุ่มเพิ่มรุ่นรถ ====== */
+.add-model-btn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 auto;
+  display: block;
+}
+
+.add-model-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* ====== ฟอร์มเพิ่มรุ่นรถ ====== */
+.model-form {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 25px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.model-form label {
+  font-weight: 600;
+  color: #444;
+}
+
+.model-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.model-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.model-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ====== ส่วนแสดงรายการรุ่นรถ ====== */
+.models-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.model-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.model-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.model-card h4 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.model-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.model-card .btn {
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.model-card .btn-danger {
+  background-color: #e53935;
+  border: none;
+}
+
+.model-card .btn-danger:hover {
+  background-color: #c62828;
+  transform: scale(1.03);
+}
+
+
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.edit-modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.edit-modal-content input {
+  margin-bottom: 10px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .brand-detail-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .model-form {
+    width: 100%;
+  }
+}
