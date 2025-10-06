@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // 🔹 Student Pages
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Home from './student/Home';
+import Home from './student/home';
 import History from './student/History';
 import Profile from './pages/Profile';
 import BrandPage from './student/BrandPage';
