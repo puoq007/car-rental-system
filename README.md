@@ -53,13 +53,30 @@ car/
 │   │   ├── brands/
 │   │   └── models/
 │   └── package.json
+│   └── car.sql
 └── frontend/
     ├── src/
+    │   ├── admin/
+    │   │   ├── AdminBrandDetail
+    │   │   ├── AdminBrands
+    │   │   ├── AdminHistory
+    │   │   ├── AdminHome
+    │   │   └── AdminRequests
     │   ├── components/
+    │   │   └── Navbar
     │   ├── pages/
-    │   └── styles/
+    │   │   ├── Login
+    │   │   ├── Profile
+    │   │   └── Register
+    │   └── student/
+    │       ├── BrandPage
+    │       ├── History
+    │       └── Home
+    ├── App
+    ├── main
     ├── index.html
     └── package.json
+
 ```
 
 ---
