@@ -1,0 +1,154 @@
+.request-container {
+  background: #ffffff;
+  padding: 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.request-container h2 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 30px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-bar:focus {
+  border-color: #1e3a8a;
+  outline: none;
+  box-shadow: 0 0 6px rgba(30, 58, 138, 0.3);
+}
+
+/* ===== ตาราง ===== */
+.request-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.request-table th {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.request-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 15px;
+  color: #374151;
+  vertical-align: middle;
+}
+
+.request-table tr:hover {
+  background-color: #f9fafb;
+  transition: 0.2s ease-in-out;
+}
+
+/* ===== สถานะ ===== */
+.status-badge {
+  display: inline-block;
+  min-width: 80px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.status-badge.approved {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.status-badge.pending {
+  background-color: #fef9c3;
+  color: #92400e;
+  border: 1px solid #facc15;
+}
+
+.status-badge.rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+/* ===== ปุ่มการจัดการ ===== */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-approve,
+.btn-reject {
+  border: none;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-approve {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-reject {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-approve:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.btn-reject:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .request-table table {
+    font-size: 14px;
+  }
+
+  .btn-approve,
+  .btn-reject {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .status-badge {
+    min-width: 70px;
+    font-size: 13px;
+  }
+}
