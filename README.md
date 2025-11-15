@@ -146,37 +146,6 @@ npm run dev
 
 เปิดที่: [http://localhost:5173](http://localhost:5173)
 
----
-
-## 🌍 การ Deploy
-
-### 🖥️ Backend (Render / Railway / Firebase)
-1. Push โค้ดขึ้น GitHub
-2. สร้างโปรเจกต์ใหม่ใน Render
-3. เชื่อมต่อ GitHub repo
-4. ตั้งค่า Environment Variables เช่น
-   ```env
-   PORT=3000
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASSWORD=
-   DB_NAME=car
-   CORS_ORIGIN=https://car-rental.vercel.app
-   ```
-5. กด Deploy ✅
-
-### 🌐 Frontend (Vercel)
-1. เข้า [https://vercel.com](https://vercel.com)
-2. Import repo → เลือกโฟลเดอร์ `frontend`
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. เพิ่ม `.env`  
-   ```env
-   VITE_API_URL=https://<backend-domain>
-   ```
-
----
-
 ## 🧠 แนวทางพัฒนาเพิ่มเติม
 
 - 🔒 เข้ารหัสรหัสผ่านด้วย `bcrypt`
